@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
-    "db.generate": "drizzle-kit generate",
-    "db.migrate": "drizzle-kit migrate",
-    "db.studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
     "demo": "node src/crud-demo.js"
   },
   "keywords": [],
