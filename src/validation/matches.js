@@ -18,11 +18,13 @@ export const matchIdParamSchema = z.object({
    id: z.coerce.number().int().positive(),
 });
 
-/** Helper for ISO date string validation */
-const isoDateString = z.string().refine((val) => !isNaN(Date.parse(val)), {
+/** Helper for ISO date string validation
+ * const isoDateString = z.string().refine((val) => !isNaN(Date.parse(val)), {
    message: 'Invalid ISO date string',
 });
+ */
 
+const isoDateString = z.iso.datetime();
 
 
 /* Schema for creating a match */
