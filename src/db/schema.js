@@ -15,7 +15,7 @@ import { pgTable, serial, text, timestamp, pgEnum, jsonb } from
       endTime: timestamp('end_time'),
       homeScore: integer('home_score').notNull().default(0),
       awayScore: integer('away_score').notNull().default(0),
-      createdAt: timestamp('created-at').notNull().defaultNow(),
+      createdAt: timestamp('created_at').notNull().defaultNow(),
    });
 
 
