@@ -50,7 +50,7 @@ export const wsArcjet = arcjetKey ?
             if(decision.isDenied()) {
                if(decision.reason.isRateLimit()) {
                   return res.status(429).json({
-                     error: "Too may requests."
+                     error: "Too many requests."
                   });
                }
 
